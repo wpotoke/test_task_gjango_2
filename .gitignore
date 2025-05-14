@@ -1,0 +1,11 @@
+.vscode
+__pycache__/
+venv
+db.sqlite3
+.pylintrc
+.idea
+.env
+requirements.txt
+
+commit_guide.md
+git_work_flow.md
