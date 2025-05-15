@@ -31,4 +31,4 @@ jobs:
 
       - name: Run Django tests
         run: |
-          python manage.py test
+          python menu_app/manage.py test
