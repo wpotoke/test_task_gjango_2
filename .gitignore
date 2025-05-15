@@ -6,6 +6,7 @@ db.sqlite3
 .idea
 .env
 requirements.txt
+fixtures/
 
 commit_guide.md
 git_work_flow.md
