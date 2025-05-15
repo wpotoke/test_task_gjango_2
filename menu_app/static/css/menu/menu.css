@@ -1,0 +1,54 @@
+/* Элегантное современное меню */
+
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 300px;
+  }
+  
+  ul.menu li {
+    margin: 6px 0;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  ul.menu li:hover {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    transform: translateX(4px);
+  }
+  
+  ul.menu li a {
+    display: block;
+    padding: 10px 14px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  
+  ul.menu li a.active {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007acc;
+  }
+  
+  ul.menu ul {
+    margin-left: 16px;
+    padding-left: 10px;
+    border-left: 2px solid #e0e0e0;
+  }
+  
+  ul.menu ul li a {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  ul.menu ul li a.active {
+    background-color: #005fa3;
+  }
+  
