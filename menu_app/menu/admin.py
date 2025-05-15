@@ -1,12 +1,8 @@
 from django.contrib import admin
-from menu.models import MainMenu, SubMenu
+from menu.models import MenuItem
 
 # Register your models here.
-@admin.register(MainMenu)
+@admin.register(MenuItem)
 class MainMenuAdmin(admin.ModelAdmin):
-    list_display = ["name"]
-
-@admin.register(SubMenu)
-class SubMenuAdmin(admin.ModelAdmin):
-    list_display = ["name"]
-    prepopulated_fields = {"slug": ("name", )}
+    list_display = ["name", "url", "parent", "menu_name"]
+    
