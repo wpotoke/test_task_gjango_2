@@ -1,0 +1,22 @@
+{% load draw_menu %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static "css/menu/menu.css" %}">
+</head>
+<body>
+    <header>
+        {% draw_menu 'main_menu' %}
+    </header>
+    <header>
+        {% draw_menu 'profile' %}
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

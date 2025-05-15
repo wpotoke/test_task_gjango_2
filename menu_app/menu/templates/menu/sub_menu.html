@@ -1,0 +1,14 @@
+<li>
+  <a href="{{ node.item.url }}" class="{% if node.item.id == active_id %}active{% endif %}">
+    {{ node.item.name }}
+  </a>
+
+  {% if node.item.id in open_path and node.children %}
+    <ul>
+      {% for child in node.children %}
+        {% include "menu/sub_menu.html" with node=child open_path=open_path active_id=active_id %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>
+  
